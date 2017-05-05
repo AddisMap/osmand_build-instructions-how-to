@@ -11,19 +11,19 @@ I expected ` git clone https://github.com/osmandapp/Osmand.git` would suffice to
 ----
 
 What works (tested with `4fe4e42c9264908c8d16100553d1a168bc992dce` on 5th May 2017):
-```bash
+```
 mkdir osmandapp
 cd osmandapp
 ```
 --------------------
 best way is to install "repo" and do ...
-```bash
+```
 repo init -u https://github.com/osmandapp/OsmAnd-manifest.git -m android_build.xml
 repo sync -d
 ```
 ------------
 alternatively... 
-```bash
+```
 git clone https://github.com/osmandapp/OsmAnd-resources.git
 git clone https://github.com/osmandapp/Osmand.git
 git clone https://github.com/osmandapp/OsmAnd-core.git
@@ -34,7 +34,7 @@ mv OsmAnd-core/ core-legacy
 mv osmandapp.github.io/ help
 ```
 ------------
-```bash
+```
 cd android/OsmAnd
 ../gradlew --refresh-dependencies clean assembleFullLegacyFatDebug
 ```
@@ -55,7 +55,7 @@ always click update
 Add the following line (to find correct gradle version) left pane under: Project (dropdown android) -> Gradle Scripts click build-gradle (Project: Osmand)
 
 ------------------------------
-```xml
+```
 buildscript {
     repositories {
         mavenCentral()
