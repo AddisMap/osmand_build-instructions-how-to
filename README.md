@@ -15,8 +15,7 @@ mkdir osmandapp
 cd osmandapp
 
 --------------------
-best way
-install repo and ...
+best way is to install "repo" and do ...
 
 repo init -u https://github.com/osmandapp/OsmAnd-manifest.git -m android_build.xml
 repo sync -d
