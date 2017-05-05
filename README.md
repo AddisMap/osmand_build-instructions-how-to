@@ -10,7 +10,7 @@ I expected ` git clone https://github.com/osmandapp/Osmand.git` would suffice to
 
 ----
 
-What works (tested with 4fe4e42c9264908c8d16100553d1a168bc992dce on 5th May 2017):
+What works (tested with `4fe4e42c9264908c8d16100553d1a168bc992dce` on 5th May 2017):
 ```mkdir osmandapp
 cd osmandapp
 ```
