@@ -1,4 +1,7 @@
 # osmand_build-instructions-how-to
+
+This is for beginners ...
+
 Source:
 https://code.google.com/archive/p/osmand/wikis/GradleCommandLineBuildEnvironment.wiki
 
@@ -44,9 +47,7 @@ Import project ...
 always click update
 
 add the following line ... (to find correct gradle version)
-
-left pane under:
-Project (dropdown android) -> Gradle Scripts
+left pane under: Project (dropdown android) -> Gradle Scripts
 click build-gradle (Project: Osmand)
 ---------------------------
 ```buildscript {
