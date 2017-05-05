@@ -3,40 +3,34 @@ Source:
 https://code.google.com/archive/p/osmand/wikis/GradleCommandLineBuildEnvironment.wiki
 
 What didn't work:
-I expected
-git clone https://github.com/osmandapp/Osmand.git
-would suffice to build the project, but files where missing
+I expected ` git clone https://github.com/osmandapp/Osmand.git` would suffice to build the project, but files where missing, because that's not the whole project.
 
 ----
 
 What works (tested with 4fe4e42c9264908c8d16100553d1a168bc992dce on 5th May 2017):
-
-mkdir osmandapp
+```mkdir osmandapp
 cd osmandapp
-
+```
 --------------------
 best way is to install "repo" and do ...
-
-repo init -u https://github.com/osmandapp/OsmAnd-manifest.git -m android_build.xml
+```repo init -u https://github.com/osmandapp/OsmAnd-manifest.git -m android_build.xml
 repo sync -d
-
+```
 ------------
 alternatively... 
-
-git clone https://github.com/osmandapp/OsmAnd-resources.git
+```git clone https://github.com/osmandapp/OsmAnd-resources.git
 git clone https://github.com/osmandapp/Osmand.git
 git clone https://github.com/osmandapp/OsmAnd-core.git
 git clone https://github.com/osmandapp/osmandapp.github.io
-
 mv Osmand/ android
 mv OsmAnd-resources/ resources
 mv OsmAnd-core/ core-legacy
 mv osmandapp.github.io/ help
+```
 ------------
-
-cd android/OsmAnd
+```cd android/OsmAnd
 ../gradlew --refresh-dependencies clean assembleFullLegacyFatDebug
-
+```
 in AS:
 
 install android sdk and tools version 23
@@ -55,12 +49,13 @@ left pane under:
 Project (dropdown android) -> Gradle Scripts
 click build-gradle (Project: Osmand)
 ---------------------------
-buildscript {
+```buildscript {
     repositories {
         mavenCentral()
         jcenter() // add this
     }
 ...
+```
 ------------------------------
 
 it should compile now!
