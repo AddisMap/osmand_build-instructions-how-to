@@ -50,7 +50,8 @@ add the following line ... (to find correct gradle version)
 left pane under: Project (dropdown android) -> Gradle Scripts
 click build-gradle (Project: Osmand)
 ---------------------------
-```buildscript {
+```java
+buildscript {
     repositories {
         mavenCentral()
         jcenter() // add this
