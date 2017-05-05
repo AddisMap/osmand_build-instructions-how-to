@@ -1,4 +1,4 @@
-# osmand_build-instructions-how-to
+# How to build Osmand
 
 This is for beginners ...
 
