@@ -46,10 +46,9 @@ Import project ...
 
 always click update
 
-add the following line ... (to find correct gradle version)
-left pane under: Project (dropdown android) -> Gradle Scripts
-click build-gradle (Project: Osmand)
----------------------------
+Add the following line (to find correct gradle version) left pane under: Project (dropdown android) -> Gradle Scripts click build-gradle (Project: Osmand)
+
+------------------------------
 ```xml
 buildscript {
     repositories {
