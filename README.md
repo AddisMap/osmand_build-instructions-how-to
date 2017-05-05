@@ -41,8 +41,10 @@ cd android/OsmAnd
 in AS:
 
 install android sdk and tools version 23
+
 Tools -> Android -> Sdk Manager
 Android Platform "Android 6 Marshmallow"
+
 Sdk Tools -> check "Show Package Details" -> 23.0.x
 
 Android Studio
